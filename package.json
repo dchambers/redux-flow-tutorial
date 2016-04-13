@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register src/**/*.spec.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,12 @@
   "dependencies": {
     "ramda": "^0.21.0",
     "redux": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-preset-modern": "^1.0.1",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
