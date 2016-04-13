@@ -1,5 +1,5 @@
 {
-  "presets": ["modern"],
+  "presets": ["modern", "react"],
   "plugins": [
     "transform-object-rest-spread",
     "transform-flow-strip-types"

@@ -1,13 +1,17 @@
 {
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "env": {
     "es6": true
   },
   "plugins": [
-    "flow-vars"
+    "flow-vars",
+    "react"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   }
 }
