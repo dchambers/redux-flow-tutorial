@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "eslint src",
     "test": "mocha --compilers js:babel-core/register src/**/*.spec.js"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.6.5",
     "babel-preset-modern": "^1.0.1",
     "chai": "^3.5.0",
+    "eslint": "^2.7.0",
     "mocha": "^2.4.5"
   }
 }
