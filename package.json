@@ -16,10 +16,14 @@
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
+    "babel-eslint": "^6.0.2",
+    "babel-plugin-transform-flow-strip-types": "^6.7.0",
     "babel-plugin-transform-object-rest-spread": "^6.6.5",
     "babel-preset-modern": "^1.0.1",
     "chai": "^3.5.0",
     "eslint": "^2.7.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-flow-vars": "^0.3.0",
     "mocha": "^2.4.5"
   }
 }

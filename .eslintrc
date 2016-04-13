@@ -3,10 +3,11 @@
   "env": {
     "es6": true
   },
+  "plugins": [
+    "flow-vars"
+  ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
   }
 }
