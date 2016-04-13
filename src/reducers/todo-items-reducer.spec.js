@@ -1,3 +1,4 @@
+/* @flow */
 import {todoItemsReducer} from './todo-items-reducer';
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
