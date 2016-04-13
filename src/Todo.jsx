@@ -1,6 +1,8 @@
+/* @flow */
 import React, {PropTypes} from 'react';
 
-export const Todo = ({text, completed, onClick}) => (
+type TodoArgs = {text: string, completed: boolean, onClick: Function};
+export const Todo = ({text, completed, onClick}: TodoArgs): Object => (
   <li
     onClick={onClick}
     style={{
