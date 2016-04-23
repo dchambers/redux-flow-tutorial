@@ -1,30 +1,32 @@
 /* @flow */
-import React, {PropTypes} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import Todo from './Todo';
 import type {TodoItems} from './reducers/todo-items-reducer';
 
 type TodoListArgs = {todos: TodoItems, onTodoClick: Function};
-export const TodoList = ({todos, onTodoClick}: TodoListArgs): Object => (
-  <ul>
-    {
-      todos.map((todo, index) =>
-      <Todo
-        key={index}
-        {...todo}
-        onClick={() => onTodoClick(index)}
-      />
-    )}
-  </ul>
-);
+export class TodoList extends React.Component {
+  props: TodoListArgs;
 
-TodoList.propTypes = {
-  todos: PropTypes.arrayOf(PropTypes.shape({
-    text: PropTypes.string.isRequired,
-    completed: PropTypes.bool.isRequired
-  }).isRequired).isRequired,
-  onTodoClick: PropTypes.func.isRequired
-};
+  constructor(props: TodoListArgs) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <ul>
+        {
+          this.props.todos.map((todo, index) =>
+          <Todo
+            key={index}
+            {...todo}
+            onClick={() => this.props.onTodoClick(index)}
+          />
+        )}
+      </ul>
+    );
+  }
+}
 
 export const TodoListHOC = connect(
   (state) => ({
