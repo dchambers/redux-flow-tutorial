@@ -1,7 +1,7 @@
 {
   "name": "redux-flow-tutorial",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tutorial and guide showing you how to add static typing to your web app.",
   "main": "index.js",
   "scripts": {
     "pretest": "npm run pretest:lint && npm run pretest:typecheck",
@@ -10,8 +10,8 @@
     "test": "mocha --compilers js:babel-core/register src/**/*.spec.js",
     "start": "budo src/app.js -- -t babelify --extension=jsx"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Redux", "React", "Flow", "ES6"],
+  "author": "Dominic Chambers",
   "license": "ISC",
   "dependencies": {
     "ramda": "^0.21.0",
